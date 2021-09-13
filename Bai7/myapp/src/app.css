@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(245, 237, 237);
+}
+
+.header {
+    height: 119px;
+    background-color: #ee4d2d;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    
+}
+  
+.container {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.container .nav {
+    margin: 0 50px;
+}
+
+.container .nav li{
+    display: inline-block;
+    line-height: 30px;
+    padding: 0 7px;
+    color: white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .nav li a {
+    text-decoration: none;
+    color: white;
+    position: relative
+}
+
+.container .nav li a:hover {
+    color: #ccc
+}
+
+.navbar-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 14px;
+    border-right: 1px solid #ccc;
+    right: -8px;
+    top: 0;
+}
+
+/* header search */
+
+.header-search {
+    display: flex;
+    justify-content:space-around;
+    margin: 18px 0;
+    padding-right: 50px;
+}
+
+.header-search .logo {
+    margin: 0 8px;
+}
+
+.logo-shopee {
+    width: 150px;
+}
+
+.header-search .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-search .container .search {
+    background-color: white;
+    height: 40px;
+    width: 740px;
+    border-radius: 2px;
+    display: flex;
+}
+
+.header-search .container .search .search-input {
+    height: 100%;
+    width: 100%;
+    margin-left: 10px ;
+    border: none;
+    outline: none;
+}
+
+
+.header-search .container .search .search-button {
+    background-color: #ee4d2d;
+    margin: 2px 2px;
+    border: none;
+    width: 60px;
+    border-radius: 2px;
+}
+
+.header-search .container .search .search-button:hover {
+    opacity: 0.9;
+}
+
+.header-search .container .search .search-button .material-icons {
+    color: white
+}
+
+.header-search .container .product {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-search .container .product li {
+    color: white;
+    font-family: sans-serif;
+    display: block;
+    margin-right: 13px;
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 10px ;
+}
+
+
+.header-search .logo-bag .material-icons {
+    color: white;
+}
+
+/* slogan */
+
+.slogan-container {
+    display: flex;
+    flex-direction: row;
+    margin: 32px 40px;
+    cursor: pointer;
+    margin-top: 151px;
+}
+
+.slogan-container .right-slogan {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.slogan-container .slogan1 {
+   height: 235px;
+   width: 796px;
+   border-radius: 3px;
+    background: url("https://cf.shopee.vn/file/4dc9709b1c89b8af9d5045c53073c886_xxhdpi");
+
+}
+
+.slogan-container .slogan2{
+    height: 115px;
+    width: 398px;
+    border-radius: 3px;
+    background: url("https://cf.shopee.vn/file/b48cd4d2bc40148fcc1d79eb8b17b535_xhdpi") bottom /cover no-repeat;
+}
+
+.slogan-container .slogan3 {
+    height: 115px;
+    width: 398px;
+    border-radius: 3px;
+    margin-top: 5px;
+    background: url("https://cf.shopee.vn/file/f79ea085e5d180d32ed4b058eee31ce6_xhdpi") bottom /cover no-repeat;
+}
+
+/* service */
+
+.container-service {
+   background-color: white;
+    width: 1200px;
+    height: 108px;
+    display: flex;
+    margin: 0 40px;
+    justify-content: space-evenly;
+}
+
+.container-service .service {
+    height: 108px;
+    width: 100px;
+    text-align: center;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.service1:hover, 
+.service2:hover,
+.service3:hover,
+.service4:hover,
+.service5:hover,
+.service6:hover,
+.service7:hover,
+.service8:hover,
+.service9:hover,
+.service10:hover{
+    transform: translateY(-2px);
+}
+
+.container-service .service img {
+    width: 45px;
+    height: 45px;
+}
+
+.container-service .service p {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* adver */
+
+.ad {
+    margin: 32px 40px;
+    cursor: pointer;
+}
+
+/* Internationnal Product */
+.inter-product {
+    width: 1200px;
+}
+
+.inter-product img {
+    margin: 0 40px;
+}
+
+.inter-product .list-product {
+    background-image: url("https://cf.shopee.vn/file/16b71e75de5b991a57211afe10762378");
+    margin-left: 40px;
+}
+
+.inter-product .best-selling-product {
+    width: 50%;
+    display: inline-block;
+}
+
+.inter-product .best-selling-product .title {
+    color: #FF2A00;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    margin-left: 70px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 60px;
+}
+
+.inter-product .best-selling-product .title h2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.inter-product .best-selling-product .title .see-more .material-icons,
+.inter-product .best-selling-product .title .see-more p  {
+    font-size: 12px;
+}
+
+.inter-product .best-selling-product .product {
+    display: flex;
+    width: 50%;
+}
+.inter-product .best-selling-product .product .infor-product {
+    width: 192px;
+    height: 237px;
+    text-align: center;
+}
+.inter-product .best-selling-product .product .infor-product img {
+    width: 162px;
+    height: 162px;
+}
+.inter-product .best-selling-product .product .infor-product p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #EE4E2E;
+}
+
+/* category */
+
+.category {
+    height: 382px;
+    width: 1200px;
+    margin: 32px 40px;
+}
+
+.category .title {
+    width: 100%;
+    height: 61px;
+    background-color: white;
+    line-height: 61px;
+    color: rgba(0,0,0,.54);
+}
+
+.category .title h1 {
+    font-size: 16px;
+    margin-left: 20px ;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.category .product-container{
+    display: flex;
+}
+
+.category .product-container .product {
+    height: 149.94px;
+    width: 119px;
+    margin-right: 1px;
+    margin-top: 1px;
+    background-color: white;
+    text-align: center;
+}
+.category .product-container .product:hover {
+    outline: 2px solid rgba(0,0,0,.5);
+}
+
+.category .product-container .product img {
+    height: 88px;
+    width: 83px;
+}
+.category .product-container .product p {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* promotion */
+
+.promotion {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+.promotion img {
+    margin-top: 400px ;
+    margin-right: 40px;
+}
+
